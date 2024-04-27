@@ -270,3 +270,8 @@ func (c *ipc) CursorPos() (CursorPos, error) {
 	var cursorpos CursorPos
 	return cursorpos, c.wrapreq("cursorpos", &cursorpos, nil)
 }
+
+func (c *ipc) Binds() ([]Bind, error) {
+	var binds []Bind
+	return binds, c.wrapreq("binds", &binds, nil)
+}
