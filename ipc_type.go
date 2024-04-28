@@ -146,4 +146,5 @@ type Bind struct {
 	KeyCode         int    `json:"keycode"`
 	Dispatcher      string `json:"dispatcher"`
 	Arg             string `json:"arg"`
+	Comment         string `json:"comment"`
 }
